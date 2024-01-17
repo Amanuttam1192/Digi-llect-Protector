@@ -1,0 +1,29 @@
+import tkinter as tk
+from tkinter import filedialog
+from PIL import Image, ImageTk
+
+def select_image():
+    file_path = filedialog.askopenfilename(initialdir="/Desktop", title="Select Image File",
+                                           filetypes=(("Image files", "*.png;*.jpg;*.jpeg;*.gif"), ("All files", "*.*")))
+    if file_path:
+        global selected_image
+        selected_image = Image.open(file_path)
+        selected_image.thumbnail((300, 300))  # Resize image if needed
+        
+        # Update the label to display the selected image
+        photo = ImageTk.PhotoImage(selected_image)
+        image_label.config(image=photo)
+        image_label.image = photo  # Keep a reference to the image to prevent garbage collection
+
+root = tk.Tk()
+root.title("Image Selector")
+
+selected_image = None
+
+select_button = tk.Button(root, text="Select Image", command=select_image)
+select_button.pack(pady=10)
+
+image_label = tk.Label(root)
+image_label.pack(padx=10, pady=10)
+
+root.mainloop()
