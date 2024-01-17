@@ -1,5 +1,5 @@
 Click the tag text to visit the site
-<A href="https://6563527225d30a73e92961fc--quiet-figolla-ed3e8d.netlify.app/">Digi-ellect Protector</a>
+<A href="https://6563527225d30a73e92961fc--quiet-figolla-ed3e8d.netlify.app/">Digi-llect Protector</a>
 
 
 ![image](https://github.com/Amanuttam1192/IP-management-Major-1-/assets/81846308/5a015448-cabe-4897-b28b-fa3fd0c279ca)
